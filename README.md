@@ -17,17 +17,20 @@ npx nest g module publications
 npx nest g controller publications
 npx nest g service publications
 
-
 *********************************************
 npm install class-validator class-transformer
 
 *********************************************
 
-
+npm create vite@latest frontend -- --template react
+cd frontend
+npm install
+npm install axios
+npm install -D tailwindcss @tailwindcss/vite
 
 *********************************************
 
-
+ 
 
 
 *********************************************
