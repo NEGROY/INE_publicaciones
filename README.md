@@ -31,6 +31,45 @@ npm install -D tailwindcss @tailwindcss/vite
 *********************************************
 
  
+### Frontend
+- React
+- Vite
+- TailwindCSS
+- Axios
 
+### Backend
+- NestJS
+- MongoDB
+- Mongoose
 
 *********************************************
+
+
+# Funcionalidades
+
+- Crear publicaciones
+- Listar publicaciones
+- Editar publicaciones
+- Eliminar publicaciones
+- Validaciones
+- API REST
+- Responsive UI
+
+*********************************************
+# Instalación
+
+## Backend
+*********************************************
+```bash
+cd backend
+npm install
+
+Crear archivo .env
+PORT=3000
+MONGODB_URI=your_connection
+
+Ejecutar:
+npm run start
+
+
+NERY DIAZ

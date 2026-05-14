@@ -92,7 +92,7 @@ function PublicationsPage() {
   }
 
   return (
-    <div className="min-h-screen bg-gray-100">
+    <div className="min-h-screen bg-gradient-to-br from-gray-100 to-gray-200">
       <Navbar />
 
       <div className="max-w-6xl mx-auto p-6">

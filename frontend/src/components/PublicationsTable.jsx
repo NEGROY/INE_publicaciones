@@ -14,7 +14,7 @@ function PublicationsTable({
   }
 
   return (
-    <div className="bg-white rounded-xl shadow-md overflow-hidden">
+    <div className="bg-white rounded-xl shadow-md overflow-x-auto">
       <table className="w-full">
         <thead className="bg-gray-200">
           <tr>
@@ -33,14 +33,19 @@ function PublicationsTable({
               <td className="p-4"> {publication.author} </td>
 
               <td className="p-4">
-                {publication.status
-                  ? 'Activo'
-                  : 'Inactivo'}
+                <span className={`px-3 py-1 rounded-full text-sm font-semibold ${
+                    publication.status
+                      ? 'bg-green-100 text-green-700'
+                      : 'bg-red-100 text-red-700'
+                  }`} >
+                  {publication.status
+                    ? 'Activo'
+                    : 'Inactivo'}
+                </span>
               </td>
-
               <td className="p-4 flex gap-2">
 
-                <button onClick={() => onEdit(publication) } className="bg-yellow-500 hover:bg-yellow-600 text-white px-4 py-2 rounded-lg" > Editar </button>
+                <button onClick={() => onEdit(publication) } className="bg-yellow-500 hover:bg-yellow-600 transition text-white px-4 py-2 rounded-lg" > Editar </button>
 
                 <button onClick={() => onDelete(publication._id) } className="bg-red-500 hover:bg-red-600 text-white px-4 py-2 rounded-lg" > Eliminar </button>
 
