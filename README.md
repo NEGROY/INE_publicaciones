@@ -13,5 +13,21 @@ Ejecutar backend
 npm run start:dev
 
 *********************************************
+npx nest g module publications
+npx nest g controller publications
+npx nest g service publications
 
 
+*********************************************
+npm install class-validator class-transformer
+
+*********************************************
+
+
+
+*********************************************
+
+
+
+
+*********************************************
